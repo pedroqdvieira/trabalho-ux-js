@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Fortes Ações Sociais</title>
+    <link rel="shortcut icon" href="imgs/logoheader.ico.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div><img src="imgs/logofortes.png" alt="logofortes"></div>
+        <div id="menu">
+            <a href="https://fortes.ind.br/quem-somos/" target=”_blank” >A Fortes</a>
+            <a href="https://fortes.ind.br/experiencias/" target=”_blank” >Setores de Atuação</a>
+            <a href="https://fortes.ind.br/melhor-solucao-para-os-clientes/" target=”_blank” >Soluções Fortes</a>
+            <a href="https://fortes.ind.br/integridade-2/" target=”_blank” >Integridade</a>
+            <a href="https://fortes.ind.br/inovafortes-2/" target=”_blank” >InovaFortes</a>
+            <a href="#">Projetos Sociais</a>
+            <a href="https://fortes.ind.br/fale-conosco/" target=”_blank” >Contato</a>
+        </div>
+    </nav>
+    <main>
+        <div id="conteudo">
+            <div>
+                <h1>Vamos lá!</h1>
+                <h3>Preencha os dados a seguir para criar sua conta:</h3>
+                <br>
+
+                <form class="formLogin">
+                    <p>Email</p>
+                    <input type="email" placeholder="email@example.com" id="email">
+                    <p>Senha</p>
+                    <input type="password" placeholder="**********" id="senha">
+                    <p>Repita sua senha</p>
+                    <input type="password" placeholder="**********" id="senha2">
+                    <p>Você concorda com os nossos <a href="#">Termos de Serviço</a> 
+                        e com as <a href="#">Políticas de Privacidade</a>?
+                    </p>
+                    <article class="regular">
+                        <input type="radio" name="aceita" id="sim">
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="aceita" id="nao">
+                        <label for="nao">Não</label>
+                    </article>
+                    <br>
+                    <button type="submit" onclick="Cadastro(event)">Cadastre-se</button>
+                </form>
+            </div>
+            <div><img src="imgs/fotinhadolado.png" alt="quadrado" id="quadrado"></div>
+        </div>
+        <div id="alert">
+            <p>
+                <strong id="message_type">Tipo de Mensagem: </strong>
+                <span id="message">Mensagem para mostrar para o usuário.</span>
+            </p>
+            <span class="closebtn" onclick="closeMessage()">&times;</span>
+        </div>
+    </main>
+</body>
+</html>

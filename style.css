@@ -62,7 +62,7 @@ nav {
 
 #BLdecor{
     position: fixed;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
 }
 

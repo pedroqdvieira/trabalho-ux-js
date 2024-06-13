@@ -10,15 +10,19 @@
 
 nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px black solid;
 }
 
 #menu > a {
     text-decoration: none;
     color: black;
-    padding: 15px;
+    padding:15px;
 }
 
 #menu > a:hover {
@@ -28,7 +32,6 @@ nav {
 
 #menu {
     text-align: center;
-    padding-top: 20px;
 }
 
 #menu > a:nth-child(6){
@@ -37,17 +40,33 @@ nav {
 }
 
 #conteudo {
+    margin: auto;
+    align-items: center;
     display: flex;
     text-align: left;
-    justify-content: space-between;    
+    justify-content: center;    
     padding: 90px;
     border: 1px solid black;
+    
+}
+
+#RTdecor{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
+#BLdecor{
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 main {
      
     padding: 10vh 20vw;
-    background-image: url(imgs/fundobody.png);
+    /*background-image: url(imgs/fundobody.png);*/
     background-size: cover;
 }
 
@@ -74,6 +93,7 @@ main {
     font-size: 17px;
     color: black;
     transition: all linear 160ms;
+    position: relative;
 }
 
 .formLogin a:hover {
@@ -120,4 +140,9 @@ main {
 }
 .closebtn:hover{
     color: gray;
+}
+
+#quadrado{
+    max-width: 20vw;
+    position: relative;
 }

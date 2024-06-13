@@ -13,7 +13,7 @@
     <div id="RTdecor"><img src="imgs/Canto-sup-dir.png" alt=""></div>
     <div id="BLdecor"><img src="imgs/Canto-inf-esq.png" alt=""></div>
     <nav>
-        <div><img src="imgs/logofortes.png" alt="logofortes"></div>
+        <div><img src="imgs/logofortes.png" alt="logofortes" id="logofts"></div>
         <div id="menu">
             <a href="https://fortes.ind.br/quem-somos/" target=”_blank” >A Fortes</a>
             <a href="https://fortes.ind.br/experiencias/" target=”_blank” >Setores de Atuação</a>
@@ -45,15 +45,16 @@
                     <button type="submit" onclick="Cadastro(event)">Cadastre-se</button>
                 </form>
             </div>
+            <div id="alert">
+                <p>
+                    <strong id="message_type">Tipo de Mensagem: </strong>
+                    <span id="message">Mensagem para mostrar para o usuário.</span>
+                </p>
+                <span class="closebtn" onclick="closeMessage()">&times;</span>
+            </div>
             <div><img src="imgs/fotinhadolado.png" alt="quadrado" id="quadrado"></div>
         </div>
-        <div id="alert">
-            <p>
-                <strong id="message_type">Tipo de Mensagem: </strong>
-                <span id="message">Mensagem para mostrar para o usuário.</span>
-            </p>
-            <span class="closebtn" onclick="closeMessage()">&times;</span>
-        </div>
+       
     </main>
 </body>
 </html>

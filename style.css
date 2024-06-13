@@ -19,6 +19,10 @@ nav {
     border-bottom: 1px black solid;
 }
 
+#logofts{
+    max-width: 6.5vw;
+}
+
 #menu > a {
     text-decoration: none;
     color: black;
